@@ -108,8 +108,8 @@ public class JGitChangeLogCommand
 
             boolean versionOnly = startVersion == null && endVersion == null && version != null;
 
-            String startRev = null;
-            String endRev = null;
+            String startRev;
+            String endRev;
 
             if ( versionOnly )
             {
