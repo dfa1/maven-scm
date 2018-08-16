@@ -92,7 +92,6 @@ public class LocalCheckInCommand
 
             if ( files.isEmpty() )
             {
-                @SuppressWarnings( "unchecked" )
                 List<File> listFiles = FileUtils.getFiles( baseDestination, "**", null, false ); 
                
                 files = listFiles;

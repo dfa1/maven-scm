@@ -95,7 +95,6 @@ public class LocalCheckOutCommandTckTest
             IOUtil.close( reader );
         }
         File root = new File( getRepositoryRoot() + "/" + module );
-        @SuppressWarnings( "unchecked" )
         List<String> fileNames = FileUtils.getFileNames( root, "**", null, false );
         assertEquals( fileNames, metadata.getRepositoryFileNames() );
     }

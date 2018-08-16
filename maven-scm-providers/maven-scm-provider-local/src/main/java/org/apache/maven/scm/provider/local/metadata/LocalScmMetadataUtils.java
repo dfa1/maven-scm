@@ -64,7 +64,6 @@ public class LocalScmMetadataUtils
     public LocalScmMetadata buildMetadata( File repository )
         throws IOException
     {
-        @SuppressWarnings( "unchecked" )
         List<String> repoFilenames = FileUtils.getFileNames( repository.getAbsoluteFile(), "**", null, false );
         LocalScmMetadata metadata = new LocalScmMetadata();
         metadata.setRepositoryFileNames( repoFilenames );

@@ -102,7 +102,6 @@ public class LocalUpdateCommand
                                       + source.getAbsolutePath() + "'." );
             }
 
-            @SuppressWarnings( "unchecked" )
             List<File> fileList = FileUtils.getFiles( source.getAbsoluteFile(), "**", null );
             List<File> list = fileList;
             updatedFiles = update( source, baseDestination, list );

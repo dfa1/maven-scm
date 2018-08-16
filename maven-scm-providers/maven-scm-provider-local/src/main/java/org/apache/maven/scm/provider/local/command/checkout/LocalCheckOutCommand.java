@@ -101,7 +101,6 @@ public class LocalCheckOutCommand
 
             if ( fileSet.getFileList().isEmpty() )
             {
-                @SuppressWarnings( "unchecked" )
                 List<File> files = FileUtils.getFiles( source.getAbsoluteFile(), "**", null ); 
                 fileList = files;
             }

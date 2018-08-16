@@ -92,7 +92,6 @@ public class LocalChangeLogCommand
 
             if ( files.isEmpty() )
             {
-                @SuppressWarnings( "unchecked" )
                 List<File> fileList = FileUtils.getFiles( baseDestination, "**", null, false );
                 files = fileList;
             }

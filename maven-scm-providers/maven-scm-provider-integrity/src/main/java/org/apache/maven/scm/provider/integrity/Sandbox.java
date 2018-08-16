@@ -770,7 +770,7 @@ public class Sandbox
             if ( null != revisionsFld && revisionsFld.getDataType().equals( Field.ITEM_LIST_TYPE )
                 && null != revisionsFld.getList() )
             {
-                @SuppressWarnings( "unchecked" ) List<Item> revList = revisionsFld.getList();
+                List<Item> revList = revisionsFld.getList();
                 for ( Iterator<Item> lit = revList.iterator(); lit.hasNext(); )
                 {
                     Item revisionItem = lit.next();

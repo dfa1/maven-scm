@@ -144,7 +144,6 @@ public class LocalUpdateCommandTckTest
             IOUtil.close( reader );
         }
         File root = new File( getRepositoryRoot() + "/" + moduleName );
-        @SuppressWarnings( "unchecked" )
         List<String> fileNames = FileUtils.getFileNames( root, "**", null, false );
         assertEquals( fileNames, metadata.getRepositoryFileNames() );
 

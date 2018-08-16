@@ -424,7 +424,6 @@ public class AccuRevCommandLineTest
 
     }
 
-    @SuppressWarnings( "unchecked" )
     @Test
     public void testRemove()
         throws Exception
